@@ -9,10 +9,10 @@ export function AppHeader(){
             <img src={LogoImage} className="object-contain" />
             <div className="flex gap-[16px] items-center">
               <button className=" bg-transparent border-[1px] border-[#E5E8F4] rounded-full  p-[16px] ">
-                <img src={BellIcon} />
+                <img src={String(BellIcon)} />
               </button>
               <button className='p-[12px] rounded-lg text-[#4A5271] flex justify-between gap-[16px] bg-[#fff] border-[1px] border-[#E5E8F4]'>
-                <img src={ProfileIcon} />
+                <img src={String(ProfileIcon)} />
                 <div>Артём</div>
               </button>
             </div>

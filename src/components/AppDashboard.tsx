@@ -22,12 +22,12 @@ export default function AppDashboard() {
       </div>
       <div className="flex flex-wrap items-center my-[30px]">
         <button className="rounded-full w-[28px] flex justify-center items-center h-[28px] bg-[#335FF9]">
-          <img src={ArrowLeft} className="w-[16px] h-[16px] " />
+          <img src={String(ArrowLeft)} className="w-[16px] h-[16px] " />
         </button>
         <h3 className="text-[#1F2333] text-[32px] ml-[10px] mr-[30px]">Пользователи</h3>
         <button className="bg-[#335FF9] rounded-lg text-white gap-[10px] flex items-center  text-[13px] py-[8px] px-[12px]">
           <span>Добавить пользователя</span>
-          <img src={PlusIcon} alt="add icon" />
+          <img src={String(PlusIcon)} alt="add icon" />
         </button>
       </div>
       <UsersTable />

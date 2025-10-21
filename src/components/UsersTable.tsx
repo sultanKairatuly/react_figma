@@ -56,7 +56,7 @@ export default function UsersTable() {
   return (
     <div>
       <div className="relative w-full rounded-tl-lg gap-[10px] px-[20px] flex items-center rounded-tr-lg py-[20px] border-[1px] border-[#E5E8F4]  border-b-none bg-white">
-        <img src={SearchIcon} className="w-[20px] h-[20px]"  alt="search icon" />
+        <img src={String(SearchIcon)} className="w-[20px] h-[20px]"  alt="search icon" />
         <input placeholder="Поиск по таблице..." className="text-[#4A5271] font-medium text-[14px] outline-none border-none" />
       </div>
       <div className=" border-[1px] border-[#E5E8F4] border-t-0  bg-white">
@@ -68,7 +68,7 @@ export default function UsersTable() {
                          <div className="flex items-center gap-2">
                             {e}
                             {['ID', 'ФИО'].includes(e) && (
-                            <img className="w-[14px] h-[14px]" src={ArrowSortIcon} alt="" />
+                            <img className="w-[14px] h-[14px]" src={String(ArrowSortIcon)} alt="" />
                             )}
                         </div>
                         </TableHead>
@@ -96,10 +96,10 @@ export default function UsersTable() {
                 <TableCell className="border-[1px] border-l-[#E5E8F4]"></TableCell>
                 <TableCell className=" flex justify-center gap-1">
                   <button  className="flex justify-center items-center rounded-lg w-[32px] h-[32px] text-[#335FF9] bg-[#E5E8F4]">
-                    <img src={EditIcon} className="w-4 h-4" />
+                    <img src={String(EditIcon)} className="w-4 h-4" />
                   </button>
                   <button  className="flex justify-center items-center rounded-lg w-[32px] h-[32px] text-red-500 bg-[#E5E8F4]">
-                    <img src={CloseIcon} className="w-4 h-4" />
+                    <img src={String(CloseIcon)} className="w-4 h-4" />
                   </button>
                 </TableCell>
               </TableRow>
@@ -112,7 +112,7 @@ export default function UsersTable() {
         <div className="flex items-center gap-1">
           <Button variant="outline" className="mr-[10px] border-[#E5E8F4] py-[20px]  px-[12px] text-[#4A5271]  border-[1px]" size="sm">
             Показать: <span className="text-[#335FF9]">7</span>
-            <img src={ArrowDown} className="w-[18px] h-[18px]" alt="arrow down" />
+            <img src={String(ArrowDown)} className="w-[18px] h-[18px]" alt="arrow down" />
           </Button>
           
           <Button variant="outline" className="border-[#335FF9] text-[#335FF9] border-[1px] py-[20px]  px-[12px]" size="sm">1</Button>

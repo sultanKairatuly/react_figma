@@ -5,9 +5,13 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
+    "ignoreDeprecations": "6.0",
+    "jsx": "preserve",
+    "lib": ["DOM"],
     "baseUrl": ".",
+    "noEmitOnError": false,
     "paths": {
       "@/*": ["./src/*"]
-  }
-  }
+    },
+},
 }

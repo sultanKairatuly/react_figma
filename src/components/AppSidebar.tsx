@@ -1,7 +1,6 @@
 import {
   Sidebar,
   SidebarContent,
-  SidebarFooter,
   SidebarGroup,
   SidebarGroupContent,
   SidebarHeader,
@@ -9,7 +8,6 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarSeparator,
-  SidebarTrigger,
   useSidebar,
 } from "./ui/sidebar"
 import categoryIcon from "@/assets/icons/category-2.svg"
@@ -59,7 +57,7 @@ export function AppSidebar() {
                       'hover:bg-[#335FF9] text-white hover:text-white active:bg-[#335FF9] active:text-white'}  p-[20px]`}
                   >
                     <div className="cursor-pointer ">
-                      <img src={item.icon} />
+                      <img src={String(item.icon)} />
                       <div className={`text-[16px] font-medium`}>{item.title}</div>
                     </div>
              
@@ -82,7 +80,7 @@ export function AppSidebar() {
                       'hover:bg-[#335FF9] text-white hover:text-white active:bg-[#335FF9] active:text-white'}  p-[20px]`}
                   >
                     <div className="cursor-pointer ">
-                      <img src={item.icon} />
+                      <img src={String(item.icon)} />
                       <div className={`text-[16px] font-medium`}>{item.title}</div>
                     </div>
              
